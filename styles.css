@@ -2,30 +2,68 @@ body{
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
+    background: url(https://source.unsplash.com/Xaanw0s0pMk);
+    background-size: cover;
+    color: rgb(228, 220, 220);
+    
 }
 
-.container{
-    width: 80vw;
-    margin:auto;
-}
-
-.form-group{
-    margin: 0 auto 1.25rem auto;
-    padding: 0.25rem;
-    text-align: center;
-}
 #title{
     text-align: center;
+    color: #fff;
 }
 #description{
     text-align: center;
     font-size: 1.3rem;
 }
-#submit{
-    display:block;
-    margin:30px auto;
+.container{
+    max-width: 650px;
+    margin:auto;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+   
 }
-.comments{
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    text-align: left;
+    padding-left:70px;
+}
+
+label{
     display: block;
-    margin:30px auto;
+    padding-bottom: 10px;
+    font-weight:bold;
+}
+
+input, #dropdown{
+    padding:5px;
+}
+
+#name, #email, #number, #dropdown{
+    width: 350px;
+    
+}
+input[type=radio], input[type="checkbox"]{
+    margin:20px;
+}
+
+
+#submit{
+    display: block;
+    margin: 30px auto;
+    color: white;
+    padding: 10px 45px;
+    background-color:rgb(92, 182, 92);
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: green;
+}
+
+label.comments{
+    margin:30px 0 15px 0;
 }
