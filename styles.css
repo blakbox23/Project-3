@@ -24,5 +24,8 @@ body{
 #submit{
     display:block;
     margin:30px auto;
-
+}
+.comments{
+    display: block;
+    margin:30px auto;
 }
