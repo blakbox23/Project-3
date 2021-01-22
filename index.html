@@ -3,27 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+  
 
-    Hello Camper!
+<div class="container">
+  <h1 id="title">Survey Form</h1>
+<p id="description">Recreation Activities </p>
+<form id ="survey-form"action="">
+  <div class="form-group">
+  <label for="name" id="name-label">Name</label>
+  <input type="text" id="name" required placeholder="Name">
+</div>
+<div class="form-group">
+  <label for="email" id="email-label"
+>Email</label>
+  <input type="email" id="email" required placeholder="Email"
+></input>
+</div>
+<div class="form-group">
+ <label for="number" id="number-label">How old are you?</label>
+  <input type="number" id="number" min="0" max="9" required placeholder="Age"
+></input>
+</div>
+<div class="form-group">
+<label for="hobby">Where do you spend most of your time</label>
+  <select id="dropdown">
+    <option value="indoor">Indoors</option>
+    <option value="outdoor">Outdoors</option>
+    <option value="both">Both</option>
+  </select>
+</div>
+<div class="form-group">
+<label for="gender"> What is your gender</label>
+<input type="radio" id="male" name="gender"  value="male">Male</input>
+<input type="radio" id="female" name="gender" value="female">Female</input>
+<input type="radio" id="other" name="gender" value="other">Other</input>
+</div>
+<div class="form-group">
+<label for="hobby">What do you like to do?</label>
+<input type="checkbox" id="scales" name="hobby" value="name">Reading</input>
+<input type="checkbox" id="scales" name="hobby" value="number">Jogging</input>
+<input type="checkbox" id="scales" name="hobby" value="number">Coding</input>
+<input type="checkbox" id="scales" name="hobby" value="number">Playing Video Games</input>
+</div>
+</form>
+</div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <h1>Hello World, we are software developers!
-      
-    </h1>
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
